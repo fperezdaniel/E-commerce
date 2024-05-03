@@ -1,0 +1,43 @@
+.class-section-modificar-prod{
+    margin: 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 27.7rem;
+    .form-modificar-prod{
+        margin-top: 10.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        justify-content: center;
+        .titulo-mod-prod{
+            text-align: center;
+            text-decoration: underline;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .class-input-modificar-prod{
+            text-align: center;
+            letter-spacing: 2px;
+            border-radius: 7px;
+            border: 1px solid black;
+            width: 30rem;
+            height: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .class-btn-form-modificar-prod{
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 7px;
+            border: 1px solid black;
+            box-shadow: 2px 2px 2px;
+            width: 30rem;
+            height: 2.5rem;
+            margin-bottom: 15px;
+        }
+    }
+}

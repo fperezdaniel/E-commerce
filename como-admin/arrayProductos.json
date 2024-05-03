@@ -1,0 +1,303 @@
+[
+    {
+        "id": 1,
+        "categoria": "carne",
+        "img":"./img/carnes/bife-de-chorizo.jpg",
+        "nombre": "Bife de chorizo x kg",
+        "marca": "Coto",
+        "codigo": "AUR980",
+        "stock": 100,
+        "precio": 3750
+    },
+    {
+        "id": 2,
+        "categoria": "carne",
+        "img":"./img/carnes/vacio.jpg",
+        "nombre": "Vacio de cerdo x kg",
+        "marca": "Coto",
+        "codigo": "AUR981",
+        "stock": 100,
+        "precio": 2000
+    },
+    {
+        "id": 3,
+        "categoria": "carne",
+        "img":"./img/carnes/entrana.jpg",
+        "nombre": "Entraña x kg",
+        "marca": "Coto",
+        "codigo": "ARG456",
+        "stock": 200,
+        "precio": 1200
+    },
+    {
+        "id": 4,
+        "categoria": "carne",
+        "img":"./img/carnes/tira-de-asado.jpg",
+        "nombre": "Tira de asado x kg",
+        "marca": "Coto",
+        "codigo": "ADF56",
+        "stock": 300,
+        "precio": 2500
+    },
+    {
+        "id": 5,
+        "categoria": "carne",
+        "img":"./img/carnes/chorizo.jpg",
+        "nombre": "Chorizo x kg",
+        "marca": "Coto",
+        "codigo": "AUR984",
+        "stock": 100,
+        "precio": 2500
+    },
+    {
+        "id": 6,
+        "categoria": "panificado",
+        "img":"./img/panificado/panlactal.jpg",
+        "nombre": "Pan Lactal Salvado 360Gr",
+        "marca": "Fargo",
+        "codigo": "ABC228",
+        "stock": 100,
+        "precio": 900
+    },
+    {
+        "id": 7,
+        "categoria": "panificado",
+        "img":"./img/panificado/facturas-de-manteca.jpg",
+        "nombre": "Medialuna De Manteca c/u",
+        "marca": "Coto",
+        "codigo": "DHH789",
+        "stock": 100,
+        "precio": 400
+    },
+    {
+        "id": 8,
+        "categoria": "panificado",
+        "img":"./img/panificado/donas.jpg",
+        "nombre": "Donas Chocolate Blanco",
+        "marca": "Bonafide",
+        "codigo": "ABC230",
+        "stock": 100,
+        "precio": 1500
+    },
+    {
+        "id": 9,
+        "categoria": "panificado",
+        "img":"./img/panificado/baguette.jpg",
+        "nombre": "Baguettin COTO X Uni",
+        "marca": "Coto",
+        "codigo": "HJF890",
+        "stock": 100,
+        "precio": 200
+    },
+    {
+        "id": 10,
+        "categoria": "panificado",
+        "img":"./img/panificado/boule.jpg",
+        "nombre": "Pan Con Chicharron X Kg",
+        "marca": "Coto",
+        "codigo": "ABC232",
+        "stock": 100,
+        "precio": 300
+    },
+    {
+        "id": 11,
+        "categoria": "aderezos",
+        "img":"./img/aderezos/mostaza-natura.jpg",
+        "nombre": "Mostaza Pouch 250Gr",
+        "marca": "Natura",
+        "codigo": "ASD678",
+        "stock": 10,
+        "precio": 932
+    },
+    {
+        "id": 12,
+        "categoria": "aderezos",
+        "img":"./img/aderezos/mayonesa-hellmans.jpg",
+        "nombre": "Mayonesa Clásica 237gr",
+        "marca": "Hellmanns",
+        "codigo": "ADR998",
+        "stock": 10,
+        "precio": 899.99
+    },
+    {
+        "id": 13,
+        "categoria": "aderezos",
+        "img":"./img/aderezos/salsa-tapatio.jpg",
+        "nombre": "Salsa Picante Tapatio 296ml",
+        "marca": "Tapatio",
+        "codigo": "SDF456",
+        "stock": 10,
+        "precio": 6469.22
+    },
+    {
+        "id": 14,
+        "categoria": "aderezos",
+        "img":"./img/aderezos/kechup-natura.jpg",
+        "nombre": "Ketchup Pouch 500Gr",
+        "marca": "Natura",
+        "codigo": "ADR999",
+        "stock": 4,
+        "precio": 629
+    },
+    {
+        "id": 15,
+        "categoria": "aderezos",
+        "img":"./img/aderezos/salsa-golf-natura.jpg",
+        "nombre": "Salsa Golf Pouch 250Gr",
+        "marca": "Natura",
+        "codigo": "ASD234",
+        "stock": 20,
+        "precio": 700
+    },
+    {
+        "id": 16,
+        "categoria": "limpieza",
+        "img":"img/limpieza/lavandina-ayudin.jpg",
+        "nombre": "Lavandina AYUDÍN 2L",
+        "marca": "Ayudin",
+        "codigo": "CCL295",
+        "stock": 20,
+        "precio": 1544
+    },
+    {
+        "id": 17,
+        "categoria": "limpieza",
+        "img":"./img/limpieza/javon-en-polvo-branby.jpg",
+        "nombre": "Jabón El Polvo Granby 3kg",
+        "marca": "Branby",
+        "codigo": "CCL442",
+        "stock": 20,
+        "precio": 5979
+    },
+    {
+        "id": 18,
+        "categoria": "limpieza",
+        "img":"./img/limpieza/suavizante-p-ropa-vivere.jpg",
+        "nombre": "Suavizante P/Ropa 3Ltr",
+        "marca": "Vivere",
+        "codigo": "CCL443",
+        "stock": 20,
+        "precio": 3899
+    },
+    {
+        "id": 19,
+        "categoria": "limpieza",
+        "img":"./img/limpieza/vanish-quitamanchas-liquido.jpg",
+        "nombre": "Quitamanchas 650ml",
+        "marca": "Vanish",
+        "codigo": "CCL444",
+        "stock": 20,
+        "precio": 2054
+    },
+    {
+        "id": 20,
+        "categoria": "limpieza",
+        "img":"./img/limpieza/quitamancha-trenet.jpg",
+        "nombre": "Quitamanchas 400ml",
+        "marca": "Trenet",
+        "codigo": "CCL445",
+        "stock": 20,
+        "precio": 978
+    },
+    {
+        "id": 21,
+        "categoria": "bebidas",
+        "img":"./img/bebidas/coca-cola.jpg",
+        "nombre": "Coca-Cola Original 1,5Lt",
+        "marca": "Coca-cola",
+        "codigo": "TYP745",
+        "stock": 20,
+        "precio": 1575
+    },
+    {
+        "id": 22,
+        "categoria": "bebidas",
+        "img":"./img/bebidas/levite-agua-saborizada.jpg",
+        "nombre": "Levite Pomelo 1.5L",
+        "marca": "Levite",
+        "codigo": "TYP746",
+        "stock": 20,
+        "precio": 1722
+    },
+    {
+        "id": 23,
+        "categoria": "bebidas",
+        "img":"./img/bebidas/villa-vicencio.jpg",
+        "nombre": "A.S.G. 1500c",
+        "marca": "Villavicencio",
+        "codigo": "TYP747",
+        "stock": 20,
+        "precio": 1500
+    },
+    {
+        "id": 24,
+        "categoria": "bebidas",
+        "img":"./img/bebidas/vino-toro-blanco.jpg",
+        "nombre": "Vino Blanco 1Ltr",
+        "marca": "Toro",
+        "codigo": "TYP748",
+        "stock": 20,
+        "precio": 2023
+    },
+    {
+        "id": 25,
+        "categoria": "bebidas",
+        "img":"./img/bebidas/vino-toro-tinto.jpg",
+        "nombre": "Vino Tinto Dulce 1Ltr",
+        "marca": "Toro",
+        "codigo": "TYP749",
+        "stock": 20,
+        "precio": 2338
+    },
+    {
+        "id": 26,
+        "categoria": "fiambres",
+        "img":"./img/fiambre/salchichas-vienissima.jpg",
+        "nombre": "Salchichas 12 Unidades 460g",
+        "marca": "Vienissima",
+        "codigo": "QMF951",
+        "stock": 20,
+        "precio": 2629
+    },
+    {
+        "id": 27,
+        "categoria": "fiambres",
+        "img":"./img/fiambre/leberwurst-finas-hierba.jpg",
+        "nombre": "Leberwurst F.H. 1Kg",
+        "marca": "Friolin",
+        "codigo": "QMF952",
+        "stock": 20,
+        "precio": 4280
+    },
+    {
+        "id": 27,
+        "categoria": "fiambres",
+        "img":"./img/fiambre/salchichas-alemanas-friolin.jpg",
+        "nombre": "Salchicha Tipo Alemana 5u",
+        "marca": "Friolin",
+        "codigo": "QMF953",
+        "stock": 20,
+        "precio": 3785
+    },
+    {
+        "id": 28,
+        "categoria": "fiambres",
+        "img":"./img/fiambre/mortadela-lario.jpg",
+        "nombre": "Mortadela Bochita 320Grm",
+        "marca": "Lario",
+        "codigo": "QMF954",
+        "stock": 20,
+        "precio": 2190
+    },
+    {
+        "id": 29,
+        "categoria": "fiambres",
+        "img":"./img/fiambre/salamin-picado-fino-friolin.jpg",
+        "nombre": "Salamin P.F. x 1 Kgm",
+        "marca": "Friolin",
+        "codigo": "QMF955",
+        "stock": 20,
+        "precio": 11795
+    }
+]
+

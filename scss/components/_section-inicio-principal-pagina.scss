@@ -1,0 +1,319 @@
+.estilos-section-inicio-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile{
+        flex-direction: column;
+    }
+    .btn-container {
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .titulo-inicio-principal {
+            text-align: center;
+            font-size: 20px;
+            text-decoration: underline;
+            text-transform: uppercase;
+            margin-bottom: 100px;
+
+            @include mobile {
+                font-size: 1rem;
+                margin-bottom: 5px;
+            }
+
+            @include tablet {
+                font-size: 1rem;
+                margin-bottom: 5px;
+            }
+        }
+
+        .estilos-btn-admin {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            background-color: #ace5ee;
+            width: 200px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 3px;
+            box-shadow: 2px 2px 2px;
+            margin: 0 100px;
+            transition-duration: 0.2s;
+
+            &:hover {
+                transform: scale(1.04);
+            }
+
+            @include mobile {
+                font-size: 10px;
+                width: 100px;
+                height: 30px;
+            }
+            @include tablet{
+                font-size: 10px;
+                width: 100px;
+                height: 30px;
+                margin: 0 10px;
+            }
+        }
+
+        .estilos-btn-cliente {
+            background-color: #0ed995;
+            text-align: center;
+            text-transform: uppercase;
+
+            font-weight: bold;
+            border: 1px solid black;
+            border-radius: 3px;
+            box-shadow: 2px 2px 2px;
+            width: 200px;
+            height: 50px;
+            margin: 0 100px;
+            transition-duration: 0.2s;
+
+            &:hover {
+                transform: scale(1.04);
+            }
+            @include mobile {
+                font-size: 10px;
+                width: 100px;
+                height: 30px;
+            }
+            @include tablet{
+                font-size: 10px;
+                width: 100px;
+                height: 30px;
+                margin: 0 10px;
+            }
+        }
+
+        .class-btn-crear-cuenta-cliente {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            background-color: #bb40bf;
+            width: 200px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 3px;
+            box-shadow: 2px 2px 2px;
+            margin: 0 100px;
+            transition-duration: 0.2s;
+
+            &:hover {
+                transform: scale(1.04);
+            }
+            @include mobile {
+                font-size: 10px;
+                width: 100px;
+                height: 30px;
+            }
+            @include tablet{
+                font-size: 10px;
+                width: 100px;
+                height: 30px;
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .form-login-admin-estilos {
+        border: 1px solid black;
+        border-radius: 7px;
+        width: 600px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        @include mobile{
+            width: 300px;
+            height: 400px;
+        }
+        .titulo-login-admin {
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+            letter-spacing: 5px;
+            margin-bottom: 50px;
+            font-size: 1rem;
+            @include mobile{
+                font-size: 1rem;
+            }
+        }
+
+        .input-admin-usuario {
+            text-align: center;
+            width: 350px;
+            height: 40px;
+            border: 1px solid gray;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            @include mobile{
+
+            }
+        }
+
+        .input-contrasena {
+            text-align: center;
+            width: 350px;
+            height: 40px;
+            border: 1px solid gray;
+            border-radius: 3px;
+        }
+
+        .btn-login-admin {
+            background-color: #51d1f6;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-align: center;
+            text-transform: uppercase;
+            border: 1px solid black;
+            border-radius: 3px;
+            box-shadow: 2px 2px 2px;
+            width: 350px;
+            height: 40px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            transition-duration: 0.2s;
+
+            &:hover {
+                transform: scale(1.04);
+            }
+        }
+
+        .btn-cancel-admin {
+            text-transform: uppercase;
+            color: white;
+            background-color: #da3a0b;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 3px;
+            border: 1px solid black;
+            border-radius: 3px;
+            box-shadow: 2px 2px 2px;
+            width: 350px;
+            height: 40px;
+            margin-bottom: 10px;
+            transition-duration: 0.2s;
+
+            &:hover {
+                transform: scale(1.04);
+            }
+        }
+    }
+
+    //**///
+    .class-form-login-cliente {
+        border: 1px solid black;
+        border-radius: 7px;
+        width: 600px;
+        height: 400px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .class-input-cliente-login {
+            text-align: center;
+            width: 350px;
+            height: 40px;
+            border: 1px solid gray;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+
+        .class-btn-login-cliente {
+            background-color: #51d1f6;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-align: center;
+            text-transform: uppercase;
+            border: 1px solid black;
+            border-radius: 3px;
+            box-shadow: 2px 2px 2px;
+            width: 350px;
+            height: 40px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .class-btn-login-cancel {
+            text-transform: uppercase;
+            color: white;
+            background-color: #da3a0b;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 3px;
+            border: 1px solid black;
+            border-radius: 3px;
+            box-shadow: 2px 2px 2px;
+            width: 350px;
+            height: 40px;
+            margin-bottom: 15px;
+        }
+    }
+
+    /**/
+    .class-form-crear-usuario {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .titulo-registro-uno {
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-size: 1.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .subtitulo-mis-datos {
+            text-align: center;
+            text-decoration: underline;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .subtitulo-identificacion {
+            text-align: center;
+            text-decoration: underline;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .class-input-mis-datos {
+            text-align: center;
+            width: 350px;
+            height: 40px;
+            border: 1px solid gray;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+
+        .class-btn-crear-mi-cuenta {
+            text-transform: uppercase;
+            color: white;
+            background-color: #8a6575;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 3px;
+            border: 1px solid black;
+            border-radius: 3px;
+            box-shadow: 2px 2px 2px;
+            width: 350px;
+            height: 40px;
+            margin-bottom: 15px;
+        }
+    }
+}

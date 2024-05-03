@@ -1,0 +1,46 @@
+.class-container-prod-renderizado {
+    margin-left: 19rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    align-content: center;
+    .card-producto {
+        margin: 50px 10px;
+        .div-card-prod {
+            width: 300px;
+            border: 1px solid rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .class-div-btn-form-modificar{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .class-btn-modificar{
+                text-align: center;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                border-radius: 7px;
+                border: 1px solid black;
+                box-shadow: 2px 2px 2px;
+                width: 16rem;
+                height: 2rem;
+            }
+        }
+    }
+    .class-prod-encontrado{
+        margin: 50px 0;
+        .div-card-prod-encontrado {
+            width: 300px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

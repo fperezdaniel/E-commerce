@@ -1,0 +1,57 @@
+.class-header {
+    background-color: #46b4e7;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    
+    .navbar {
+        .container-fluid {
+            .class-titulo-pagina-principal {
+                color: white;
+                font-size: 1rem;
+                font-family: 'Antic Didone', serif;
+                font-weight: bold;
+                
+                @include mobile{
+                    font-size: 1rem;
+                }
+                @include tablet{
+                    font-size: 1rem;
+                }
+                
+            }
+            .class-usuario-en-linea{
+                color: white;
+                font-size: 0.69rem;
+                text-transform: capitalize;
+                padding-top: 0.7rem;
+                @include mobile{
+                    display: none;
+                }
+            }
+            .class-img-usuario{
+                width: 20px;
+            }
+            .collapse {
+                .class-ul-container {
+                    font-size: 0.69rem;
+                    font-weight: bold;
+                    @include mobile{
+                        font-size: 0.62rem;
+                    }
+                    @include tablet{
+                        font-size: 0.62rem;
+                    }
+                    .class-li{
+                        .nav-link{
+                            color: white;
+                            font-weight: bold;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
