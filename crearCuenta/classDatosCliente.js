@@ -1,12 +1,5 @@
 class DatosCliente {
-    constructor({ nombre, apellido, fechaNacimiento, sexo, dni, estadoCivil, email, user, pass }) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.fechaNacimiento = fechaNacimiento;
-        this.sexo = sexo;
-        this.dni = dni;
-        this.estadoCivil = estadoCivil;
-        this.email = email;
+    constructor({user, pass }) {
         this.user = user;
         this.pass = pass;
     }

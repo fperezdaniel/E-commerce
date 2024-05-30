@@ -9,20 +9,6 @@ const cargaDeDatosUsuarioNuevo = (e) => {
     e.preventDefault();
     const eventoFormNuevoCliente = e.target;
     console.log("linea 6 eventoFormNuevoCliente: ", eventoFormNuevoCliente);
-    const inputNombreRegistro = eventoFormNuevoCliente["input-nombre-registro"].value.toLowerCase();
-    console.log(inputNombreRegistro);
-    const inputApellidoRegistro = eventoFormNuevoCliente["input-apellido-registro"].value.toLowerCase();
-    console.log(inputApellidoRegistro);
-    const inputFechaNacimiento = eventoFormNuevoCliente["input-fecha-registro"].value.toLowerCase();
-    console.log(inputFechaNacimiento);
-    const inputSexoRegistro = eventoFormNuevoCliente["input-sexo-registro"].value.toLowerCase();
-    console.log(inputSexoRegistro);
-    const inputDniRegistro = parseInt(eventoFormNuevoCliente["input-dni-registro"].value);
-    console.log(inputDniRegistro);
-    const inputEstadoCivil = eventoFormNuevoCliente["input-estado-civil-registro"].value.toLowerCase();
-    console.log(inputEstadoCivil);
-    const inputEmail = eventoFormNuevoCliente["input-mail-registro"].value;
-    console.log(inputEmail);
     const inputUsuarioRegistro = eventoFormNuevoCliente["input-usuario-registro"].value;
     console.log(inputUsuarioRegistro);
     const inputContrasenaRegistro = eventoFormNuevoCliente["input-contrasena-registro"].value;
@@ -31,13 +17,6 @@ const cargaDeDatosUsuarioNuevo = (e) => {
     console.log(inputsRegistroValidados);
     if (inputsRegistroValidados) {
         const nuevoClienteRegistrado = new DatosCliente({
-            nombre: inputNombreRegistro,
-            apellido: inputApellidoRegistro,
-            fechaNacimiento: inputFechaNacimiento,
-            sexo: inputSexoRegistro,
-            dni: inputDniRegistro,
-            estadoCivil: inputEstadoCivil,
-            email: inputEmail,
             user: inputUsuarioRegistro,
             pass: inputContrasenaRegistro,
         });
