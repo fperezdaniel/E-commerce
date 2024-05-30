@@ -6,7 +6,7 @@
         "nombre": "Bife de chorizo x kg",
         "marca": "Coto",
         "codigo": "AUR980",
-        "stock": 100,
+        "stock": 10,
         "precio": 3750
     },
     {
@@ -16,7 +16,7 @@
         "nombre": "Vacio de cerdo x kg",
         "marca": "Coto",
         "codigo": "AUR981",
-        "stock": 100,
+        "stock": 10,
         "precio": 2000
     },
     {
@@ -26,7 +26,7 @@
         "nombre": "Entraña x kg",
         "marca": "Coto",
         "codigo": "ARG456",
-        "stock": 200,
+        "stock": 20,
         "precio": 1200
     },
     {
@@ -36,7 +36,7 @@
         "nombre": "Tira de asado x kg",
         "marca": "Coto",
         "codigo": "ADF56",
-        "stock": 300,
+        "stock": 30,
         "precio": 2500
     },
     {
@@ -46,7 +46,7 @@
         "nombre": "Chorizo x kg",
         "marca": "Coto",
         "codigo": "AUR984",
-        "stock": 100,
+        "stock": 10,
         "precio": 2500
     },
     {
@@ -56,7 +56,7 @@
         "nombre": "Pan Lactal Salvado 360Gr",
         "marca": "Fargo",
         "codigo": "ABC228",
-        "stock": 100,
+        "stock": 10,
         "precio": 900
     },
     {
@@ -66,7 +66,7 @@
         "nombre": "Medialuna De Manteca c/u",
         "marca": "Coto",
         "codigo": "DHH789",
-        "stock": 100,
+        "stock": 10,
         "precio": 400
     },
     {
@@ -76,7 +76,7 @@
         "nombre": "Donas Chocolate Blanco",
         "marca": "Bonafide",
         "codigo": "ABC230",
-        "stock": 100,
+        "stock": 10,
         "precio": 1500
     },
     {
@@ -86,7 +86,7 @@
         "nombre": "Baguettin COTO X Uni",
         "marca": "Coto",
         "codigo": "HJF890",
-        "stock": 100,
+        "stock": 10,
         "precio": 200
     },
     {
@@ -96,7 +96,7 @@
         "nombre": "Pan Con Chicharron X Kg",
         "marca": "Coto",
         "codigo": "ABC232",
-        "stock": 100,
+        "stock": 10,
         "precio": 300
     },
     {
@@ -126,8 +126,8 @@
         "nombre": "Salsa Picante Tapatio 296ml",
         "marca": "Tapatio",
         "codigo": "SDF456",
-        "stock": 10,
-        "precio": 6469.22
+        "stock": 5,
+        "precio": 645
     },
     {
         "id": 14,

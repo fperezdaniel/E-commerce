@@ -1,6 +1,9 @@
 import { validarInputsPagoConTarjeta } from "./validarInputsPagoConTarjeta.js";
-import { carousel } from "./carouselPaginaPrincipal.js";
-import { vaciarCarrito } from "./agregarAlCarrito.js";
+
+import { mostrarCarrito } from "./agregarAlCarrito.js";
+import { miCarrito } from "./agregarAlCarrito.js";
+
+
 
 export const finalizarCompraConDebito = (e) => {
     e.preventDefault();
@@ -20,12 +23,16 @@ export const finalizarCompraConDebito = (e) => {
     const inputsValidadosPagoConDebito = validarInputsPagoConTarjeta(inputNumeroDeTarjeta, inputNombreApellidoTarjeta, inputCaducidadMes, inputCaducidadAno, inputCodigoDeSeguridad);
     if (inputsValidadosPagoConDebito) {
         alert("El pago se efectuo con exito, muchas gracias por su compra");
-        const seccionCentralMain = document.getElementById("seccion-central-main");
-        seccionCentralMain.innerHTML = ``;
-        carousel();
-        vaciarCarrito();
+        
+        const containerSectionProd = document.getElementById("container-seccion-prod");
+        containerSectionProd.innerHTML = ``;
+        miCarrito.length = 0;
+        localStorage.setItem("productoEnCarrito", JSON.stringify(miCarrito));
+        mostrarCarrito();
     } else {
         alert("Complete todos los campos por favor");
     }
 }
-
+/* Te queda acomodar la parte con credito y ver por q se sigue viendo
+el carrito en el inicio principal
+ */

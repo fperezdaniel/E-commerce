@@ -24,23 +24,25 @@ class Deposito {
         const sectionProdRenderizado = document.getElementById("section-prod-renderizado");
         console.log(sectionProdRenderizado, "linea 12");
         sectionProdRenderizado.innerHTML = ``;
+        const containerCardProd = document.createElement("div");
+        containerCardProd.setAttribute("class", "class-container-card-prod");
+        sectionProdRenderizado.appendChild(containerCardProd);
         prod.forEach((el) => {
             const cardProducto = document.createElement("div");
             cardProducto.setAttribute("class", "card-producto");
             cardProducto.innerHTML = `
-                                <div class= "div-card-prod">
-                                    <p>Categoria: ${el.categoria}</p>
-                                    <p>Nombre: ${el.nombre}</p>
-                                    <p>Marca: ${el.marca}</p>
-                                    <p>Codigo: ${el.codigo}</p>
-                                    <p>Stock: ${el.stock}</p>
-                                    <p>Precio: ${el.precio}</p>
-                                    <p>Total: ${el.stock * el.precio}</p>
-                                </div>
-                                <div class="class-div-btn-form-modificar">
-                                    <button class="class-btn-modificar" data-id="${el.id}">Modificar</button>
-                                </div>`;
-            sectionProdRenderizado.appendChild(cardProducto);
+                                    <p class ="class-items-card-prod">Categoria: ${el.categoria}</p>
+                                    <p class ="class-items-card-prod">Nombre: ${el.nombre}</p>
+                                    <p class ="class-items-card-prod">Marca: ${el.marca}</p>
+                                    <p class ="class-items-card-prod">Codigo: ${el.codigo}</p>
+                                    <p class ="class-items-card-prod">Stock: ${el.stock}</p>
+                                    <p class ="class-items-card-prod">Precio: ${el.precio}</p>
+                                    <p class ="class-items-card-prod">Total: ${el.stock * el.precio}</p>
+                                    <div class="class-container-btn-modificar-prod">
+                                        <button class="class-btn-modificar" data-id="${el.id}">Modificar</button>
+                                    </div>
+                                    `;
+            containerCardProd.appendChild(cardProducto);
         });
         const btnModificar = document.getElementsByClassName("class-btn-modificar");
 
@@ -74,33 +76,37 @@ class Deposito {
                 objetoDeposito.renderizarProd(objetoDeposito.deposito);
             }
         }
+        let formModificarProdEnPantalla = false;
         const crearFormModificarProd = (e) => {
-            const eventoBtnModificar = e.target.dataset.id;
-            const sectionModificarProd = document.getElementById("section-modificar-prod");
-            console.log(sectionModificarProd);
-            sectionModificarProd.innerHTML = ``;
-            const formMordificarProd = document.createElement("form");
-            formMordificarProd.setAttribute("class", "form-modificar-prod")
-            formMordificarProd.innerHTML = `
-                                                <h5 class="titulo-mod-prod">Ingrese los datos que desea modificar</h5> 
-                                                <input class="class-input-modificar-prod" name="input-mod-categoria" type="text" placeholder="Categoria">
-                                                <input class="class-input-modificar-prod" name="input-mod-nombre" type="text" placeholder="Nombre">
-                                                <input class="class-input-modificar-prod" name="input-mod-marca" type="text" placeholder="Marca">
-                                                <input class="class-input-modificar-prod" name="input-mod-codigo" type="text" placeholder="Codigo">
-                                                <input class="class-input-modificar-prod" name="input-mod-stock" type="text" placeholder="Stock">
-                                                <input class="class-input-modificar-prod" name="input-mod-precio" type="text" placeholder="Precio">
-                                                <button class="class-btn-form-modificar-prod">Aceptar</button>
-                                                <button class="class-btn-form-modificar-prod" type="reset">Borrar datos en campos</button>
-                                                <button id="btn-cerrar-form-modificar"class="class-btn-form-modificar-prod">Cerrar formulario</button>`;
-            sectionModificarProd.appendChild(formMordificarProd);
-            formMordificarProd.addEventListener("submit", modificarProd);
-            const btnCerrarFormModificar = document.getElementById("btn-cerrar-form-modificar");
-            btnCerrarFormModificar.addEventListener("click", () => {
-                const sectionModificarProd = document.getElementById("section-modificar-prod");
-                console.log(sectionModificarProd);
-                sectionModificarProd.innerHTML = ``;
-            })
+            if (!formModificarProdEnPantalla) {
+
+                const eventoBtnModificar = e.target.dataset.id;
+                const sectionProdRenderizado = document.getElementById("section-prod-renderizado");
+                const containerFormModificarProd = document.createElement("div");
+                containerFormModificarProd.setAttribute("class", "class-container-form-modificar-prod");
+                sectionProdRenderizado.appendChild(containerFormModificarProd);
+
+                const formMordificarProd = document.createElement("form");
+                formMordificarProd.setAttribute("class", "class-form-modificar-prod");
+                formMordificarProd.setAttribute("id", "id-enlace-relativo");
+
+                formMordificarProd.innerHTML = `
+                                                    <h5  class="titulo-mod-prod">Ingrese los datos que desea modificar</h5> 
+                                                    <input class="class-input-modificar-prod" name="input-mod-categoria" type="text" placeholder="Categoria">
+                                                    <input class="class-input-modificar-prod" name="input-mod-nombre" type="text" placeholder="Nombre">
+                                                    <input class="class-input-modificar-prod" name="input-mod-marca" type="text" placeholder="Marca">
+                                                    <input class="class-input-modificar-prod" name="input-mod-codigo" type="text" placeholder="Codigo">
+                                                    <input class="class-input-modificar-prod" name="input-mod-stock" type="text" placeholder="Stock">
+                                                    <input class="class-input-modificar-prod" name="input-mod-precio" type="text" placeholder="Precio">
+                                                    <button class="class-btn-form-modificar-prod">Aceptar</button>
+                                                    <button class="class-btn-form-modificar-prod" type="reset">Borrar datos en campos</button>`;
+                containerFormModificarProd.appendChild(formMordificarProd);
+                formMordificarProd.addEventListener("submit", modificarProd);
+                formModificarProdEnPantalla = true;
+                formMordificarProd.scrollIntoView({ behavior: 'smooth' });
+            }
         }
+
         for (const btn of btnModificar) {
             btn.addEventListener("click", crearFormModificarProd)
         }
@@ -138,4 +144,3 @@ class Deposito {
     }
 }
 export default Deposito;
-

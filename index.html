@@ -20,12 +20,16 @@
     <section id="section-inicio-principal" class="estilos-section-inicio-principal">
         <!-- section iniciar ADMIN / CLIENTE /NUEVO USUARIO -->
         <div id="container-botones" class="btn-container">
-            <h5 class="titulo-inicio-principal">Bienvenido elija como desea iniciar session</h5>
-            <button id="btn-admin" class="estilos-btn-admin">Session admin</button>
-            <button id="btn-cliente" class="estilos-btn-cliente">Session cliente</button>
-            <button id="btn-crear-cuenta" class="class-btn-crear-cuenta-cliente">Crear mi cuenta</button>
+            <h5 id="titulo-inicio-principal" class="titulo-inicio-principal">Bienvenido elija como desea iniciar session
+            </h5>
+            <div class="class-container-btn-inicio-principal">
+                <button id="btn-admin" class="estilos-btn-admin">Session admin</button>
+                <button id="btn-cliente" class="estilos-btn-cliente">Session cliente</button>
+                <button id="btn-crear-cuenta" class="class-btn-crear-cuenta-cliente">Crear mi cuenta</button>
+            </div>
         </div>
         <!-- Fin section login ADMIN / CLIENTE / NUEVO USUARIO -->
+        <!-- Form login admin -->
         <form id="form-login-admin" class="oculto">
             <h5 class="titulo-login-admin">Bienvenido administrador</h5>
             <input class="input-admin-usuario" name="input-usuario-admin" type="text" placeholder="Usuario">
@@ -63,11 +67,8 @@
             <button class="class-btn-crear-mi-cuenta">Crear mi cuenta</button>
         </form>
         <!-- Fin nuevo cliente -->
+
     </section>
-
-
-
-
 
 
     <!-- section menu principal admin -->
@@ -79,32 +80,37 @@
     <!-- section renderizar prod -->
     <section id="section-prod-renderizado" class="class-container-prod-renderizado">
         <!-- Section modificar prod-->
-        <section id="section-modificar-prod" class="class-section-modificar-prod"></section>
+        <!-- <section id="section-modificar-prod" class="class-section-modificar-prod"></section> -->
         <!-- Fin section modificar prod -->
     </section>
     <!-- Fin renderizar prod -->
-    <!-- Section modificar prod-->
-    <section id="section-modificar-prod" class="class-section-modificar-prod"></section>
-    <!-- Fin section modificar prod -->
 
 
 
-    
     <!-- Header principal -->
     <header id="header-container" class="class-header"></header>
     <!-- Fin header principal-->
+    <!-- Section carousel y carrito -->
+    <section id="section-container-carousel-y-carrito" class="class-section-container-carousel-y-carrito">
+        <section id="section-container-carousel" class="class-section-container-carousel"></section>
+        <section id="container-section-prod-en-carrito" class="oculto"></section>
+    </section>
+    <!-- Fin section carousel y carrito -->
+
+
+
     <!-- Main pagina principal cliente -->
-    <main id="seccion-central-main" class="class-seccion-central-main"></main>
-    <section id="container-prod-en-carrito" class="oculto"></section>
+    <main id="seccion-central-main" class="class-seccion-central-main">
+        <section id="container-seccion-prod" class="class-container-seccion-prod"></section>
+    </main>
+    <!-- <section id="container-prod-en-carrito" class="oculto"></section> -->
     <!-- Fin main pagina principal cliente -->
-    
-    
+
+
     <!-- Footer -->
     <footer id="footer" class="class-footer"></footer>
     <!-- Fin footer -->
-    <!-- Script javascript -->
-    <script type="module" src="como-admin/archivoRaiz.js"></script>
-    <!-- Fin script javascrip -->
+
     <!-- Bootstrap link javascript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js"
         integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn"
@@ -113,6 +119,9 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
     <!-- Fin script boostrap -->
+    <!-- Script javascript -->
+    <script type="module" src="como-admin/archivoRaiz.js"></script>
+    <!-- Fin script javascrip -->
 </body>
 
 </html>

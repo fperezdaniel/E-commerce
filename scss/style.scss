@@ -10,10 +10,11 @@
 @import "./components/components-como-admin/menu-principal-como-admin";
 @import "./components/components-como-admin/main-admin";
 @import "./components/components-como-admin/section-prod-renderizado";
-@import "./components/components-como-admin/section-modificar-prod";
 /* Fin como admin */
 /* Como cliente */
 @import "./components/components-como-cliente/header-container";
 @import "./components/components-como-cliente/section-central-main";
-@import "./components/components-como-cliente/container-prod-en-carrito";
+/* Section carousel*/
+@import "./components/components-como-cliente/section-container-carousel.scss";
+/* Fin section carousel */
 /* Fin como cliente */

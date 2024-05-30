@@ -2,20 +2,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include mobile{
+    @include mobile {
         flex-direction: column;
     }
+
     .btn-container {
+        margin: 100px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
         @include mobile {
-            display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: 1rem;
         }
 
+        @include tablet {
+            gap: 4rem;
+        }
+
         .titulo-inicio-principal {
             text-align: center;
+            font-weight: bold;
             font-size: 20px;
             text-decoration: underline;
             text-transform: uppercase;
@@ -32,94 +43,107 @@
             }
         }
 
-        .estilos-btn-admin {
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: bold;
-            background-color: #ace5ee;
-            width: 200px;
-            height: 50px;
-            border: 1px solid black;
-            border-radius: 3px;
-            box-shadow: 2px 2px 2px;
-            margin: 0 100px;
-            transition-duration: 0.2s;
+        .class-container-btn-inicio-principal {
+            display: flex;
+            gap: 3rem;
 
-            &:hover {
-                transform: scale(1.04);
+            @include tablet {
+                gap: 2rem;
             }
 
-            @include mobile {
-                font-size: 10px;
-                width: 100px;
-                height: 30px;
+            .estilos-btn-admin {
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                background-color: #ace5ee;
+                width: 200px;
+                height: 50px;
+                border: 1px solid black;
+                border-radius: 3px;
+                box-shadow: 2px 2px 2px;
+                transition-duration: 0.2s;
+
+                &:hover {
+                    transform: scale(1.04);
+                }
+
+                @include mobile {
+                    font-size: 10px;
+                    width: 100px;
+                    height: 30px;
+                }
+
+                @include tablet {
+                    font-size: 10px;
+                    width: 100px;
+                    height: 30px;
+
+                }
             }
-            @include tablet{
-                font-size: 10px;
-                width: 100px;
-                height: 30px;
-                margin: 0 10px;
+
+            .estilos-btn-cliente {
+                background-color: #0ed995;
+                text-align: center;
+                text-transform: uppercase;
+
+                font-weight: bold;
+                border: 1px solid black;
+                border-radius: 3px;
+                box-shadow: 2px 2px 2px;
+                width: 200px;
+                height: 50px;
+                transition-duration: 0.2s;
+
+                &:hover {
+                    transform: scale(1.04);
+                }
+
+                @include mobile {
+                    font-size: 10px;
+                    width: 100px;
+                    height: 30px;
+                }
+
+                @include tablet {
+                    font-size: 10px;
+                    width: 100px;
+                    height: 30px;
+                    margin: 0 10px;
+                }
+            }
+
+            .class-btn-crear-cuenta-cliente {
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                background-color: #bb40bf;
+                width: 200px;
+                height: 50px;
+                border: 1px solid black;
+                border-radius: 3px;
+                box-shadow: 2px 2px 2px;
+
+                transition-duration: 0.2s;
+
+                &:hover {
+                    transform: scale(1.04);
+                }
+
+                @include mobile {
+                    font-size: 10px;
+                    width: 100px;
+                    height: 30px;
+                }
+
+                @include tablet {
+                    font-size: 10px;
+                    width: 100px;
+                    height: 30px;
+                    margin: 0 10px;
+                }
             }
         }
 
-        .estilos-btn-cliente {
-            background-color: #0ed995;
-            text-align: center;
-            text-transform: uppercase;
-
-            font-weight: bold;
-            border: 1px solid black;
-            border-radius: 3px;
-            box-shadow: 2px 2px 2px;
-            width: 200px;
-            height: 50px;
-            margin: 0 100px;
-            transition-duration: 0.2s;
-
-            &:hover {
-                transform: scale(1.04);
-            }
-            @include mobile {
-                font-size: 10px;
-                width: 100px;
-                height: 30px;
-            }
-            @include tablet{
-                font-size: 10px;
-                width: 100px;
-                height: 30px;
-                margin: 0 10px;
-            }
-        }
-
-        .class-btn-crear-cuenta-cliente {
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: bold;
-            background-color: #bb40bf;
-            width: 200px;
-            height: 50px;
-            border: 1px solid black;
-            border-radius: 3px;
-            box-shadow: 2px 2px 2px;
-            margin: 0 100px;
-            transition-duration: 0.2s;
-
-            &:hover {
-                transform: scale(1.04);
-            }
-            @include mobile {
-                font-size: 10px;
-                width: 100px;
-                height: 30px;
-            }
-            @include tablet{
-                font-size: 10px;
-                width: 100px;
-                height: 30px;
-                margin: 0 10px;
-            }
-        }
     }
 
     .form-login-admin-estilos {
@@ -127,24 +151,37 @@
         border-radius: 7px;
         width: 600px;
         height: 400px;
+        margin: 100px 0;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        
-        @include mobile{
+
+        @include mobile {
             width: 300px;
             height: 400px;
         }
+
+        @include tablet {
+            width: 400px;
+            height: 400px;
+        }
+
         .titulo-login-admin {
+            font-weight: bold;
             text-align: center;
             text-transform: uppercase;
             text-decoration: underline;
             letter-spacing: 5px;
             margin-bottom: 50px;
             font-size: 1rem;
-            @include mobile{
-                font-size: 1rem;
+
+            @include mobile {
+                font-size: 0.7rem;
+            }
+
+            @include tablet {
+                font-size: 0.7rem;
             }
         }
 
@@ -155,8 +192,17 @@
             border: 1px solid gray;
             border-radius: 3px;
             margin-bottom: 15px;
-            @include mobile{
 
+            @include mobile {
+                width: 15rem;
+                height: 2.2rem;
+                font-size: 0.6rem;
+            }
+
+            @include tablet {
+                width: 20rem;
+                height: 3rem;
+                font-size: 0.6rem;
             }
         }
 
@@ -166,6 +212,18 @@
             height: 40px;
             border: 1px solid gray;
             border-radius: 3px;
+
+            @include mobile {
+                width: 15rem;
+                height: 2.2rem;
+                font-size: 0.6rem;
+            }
+
+            @include tablet {
+                width: 20rem;
+                height: 3rem;
+                font-size: 0.6rem;
+            }
         }
 
         .btn-login-admin {
@@ -187,6 +245,19 @@
             &:hover {
                 transform: scale(1.04);
             }
+
+            @include mobile {
+                font-size: 10px;
+                width: 15rem;
+                height: 2.2rem;
+
+            }
+
+            @include tablet {
+                width: 20rem;
+                height: 3rem;
+                font-size: 0.6rem;
+            }
         }
 
         .btn-cancel-admin {
@@ -207,6 +278,18 @@
             &:hover {
                 transform: scale(1.04);
             }
+
+            @include mobile {
+                font-size: 10px;
+                width: 15rem;
+                height: 2.2rem;
+            }
+
+            @include tablet {
+                width: 20rem;
+                height: 3rem;
+                font-size: 0.6rem;
+            }
         }
     }
 
@@ -216,12 +299,20 @@
         border-radius: 7px;
         width: 600px;
         height: 400px;
-
+        margin: 100px 0;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        @include mobile {
+            width: 300px;
+            height: 400px;
+        }
 
+        @include tablet {
+            width: 400px;
+            height: 400px;
+        }
         .class-input-cliente-login {
             text-align: center;
             width: 350px;
@@ -229,6 +320,17 @@
             border: 1px solid gray;
             border-radius: 3px;
             margin-bottom: 15px;
+            @include mobile {
+                width: 15rem;
+                height: 2.2rem;
+                font-size: 0.6rem;
+            }
+
+            @include tablet {
+                width: 20rem;
+                height: 3rem;
+                font-size: 0.6rem;
+            }
         }
 
         .class-btn-login-cliente {
@@ -245,6 +347,17 @@
             height: 40px;
             margin-bottom: 30px;
             margin-top: 30px;
+            @include mobile {
+                width: 15rem;
+                height: 2.2rem;
+                font-size: 0.6rem;
+            }
+
+            @include tablet {
+                width: 20rem;
+                height: 3rem;
+                font-size: 0.6rem;
+            }
         }
 
         .class-btn-login-cancel {
@@ -260,11 +373,23 @@
             width: 350px;
             height: 40px;
             margin-bottom: 15px;
+            @include mobile {
+                width: 15rem;
+                height: 2.2rem;
+                font-size: 0.6rem;
+            }
+
+            @include tablet {
+                width: 20rem;
+                height: 3rem;
+                font-size: 0.6rem;
+            }
         }
     }
 
     /**/
     .class-form-crear-usuario {
+        margin: 100px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -276,6 +401,13 @@
             text-decoration: underline;
             font-size: 1.5rem;
             margin-bottom: 5rem;
+            @include mobile {
+                font-size: 1rem;
+            }
+
+            @include tablet {
+                font-size: 1rem;
+            }
         }
 
         .subtitulo-mis-datos {
@@ -283,6 +415,13 @@
             text-decoration: underline;
             font-size: 1rem;
             margin-bottom: 2rem;
+            @include mobile {
+                font-size: 1rem;
+            }
+
+            @include tablet {
+                font-size: 1rem;
+            }
         }
 
         .subtitulo-identificacion {
@@ -290,6 +429,13 @@
             text-decoration: underline;
             font-size: 1rem;
             margin-bottom: 2rem;
+            @include mobile {
+                font-size: 1rem;
+            }
+
+            @include tablet {
+                font-size: 1rem;
+            }
         }
 
         .class-input-mis-datos {
@@ -299,6 +445,17 @@
             border: 1px solid gray;
             border-radius: 3px;
             margin-bottom: 15px;
+            @include mobile {
+                width: 15rem;
+                height: 2.2rem;
+                font-size: 0.6rem;
+            }
+
+            @include tablet {
+                width: 20rem;
+                height: 3rem;
+                font-size: 0.6rem;
+            }
         }
 
         .class-btn-crear-mi-cuenta {
@@ -314,6 +471,17 @@
             width: 350px;
             height: 40px;
             margin-bottom: 15px;
+            @include mobile {
+                font-size: 10px;
+                width: 15rem;
+                height: 2.2rem;
+            }
+
+            @include tablet {
+                width: 20rem;
+                height: 3rem;
+                font-size: 0.6rem;
+            }
         }
     }
 }

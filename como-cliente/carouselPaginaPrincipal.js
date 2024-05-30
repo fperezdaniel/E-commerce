@@ -1,7 +1,8 @@
-
+/* Body.appendchild(carousel) */
 /*  py-2 d-block */
 export const carousel = () => {
-    const seccionCentralMain = document.getElementById("seccion-central-main");
+    const sectionContainerCarousel = document.getElementById("section-container-carousel");
+    sectionContainerCarousel.innerHTML = ``;
     const containerCarousel = document.createElement("div");
     containerCarousel.setAttribute("class", "container d-block py-2 w-100");
     containerCarousel.innerHTML = `
@@ -42,5 +43,5 @@ export const carousel = () => {
                                                 <span class="visually-hidden">Next</span>
                                             </a>
                                         </div>`;
-    seccionCentralMain.appendChild(containerCarousel);
+    sectionContainerCarousel.appendChild(containerCarousel);
 }

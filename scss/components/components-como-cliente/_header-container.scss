@@ -29,6 +29,9 @@
                 @include mobile{
                     display: none;
                 }
+                @include tablet{
+                    display: none;
+                }
             }
             .class-img-usuario{
                 width: 20px;

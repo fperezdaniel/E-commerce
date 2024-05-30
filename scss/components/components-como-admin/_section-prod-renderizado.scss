@@ -1,46 +1,209 @@
 .class-container-prod-renderizado {
-    margin-left: 19rem;
+    /*id="section-prod-renderizado"*/
+    width: 100%;
+    margin: 5rem 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:flex-end;
-    align-content: center;
-    .card-producto {
-        margin: 50px 10px;
-        .div-card-prod {
-            width: 300px;
-            border: 1px solid rgb(0, 0, 0);
+    gap: 0.5rem;
+    justify-content: center;
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .class-container-form-modificar-prod {
+
+        background-color: #8a9f95;
+        border-radius: 10px;
+        width: 500px;
+        height: 500px;
+        margin: 0 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @include mobile {
+            width: 350px;
+            height: 500px;
+            margin: 0 auto;
+        }
+
+        @include tablet {
+            width: 380px;
+            height: 500px;
+            margin: 0 auto;
+        }
+
+        .class-form-modificar-prod {
+            width: 450px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-        }
-        .class-div-btn-form-modificar{
-            margin-top: 1rem;
-            display: flex;
             justify-content: center;
-            align-items: center;
-            .class-btn-modificar{
+            gap: 0.5rem;
+
+            .titulo-mod-prod {
+                text-transform: uppercase;
                 text-align: center;
                 font-weight: bold;
-                text-transform: uppercase;
-                letter-spacing: 2px;
+
+                @include mobile {
+                    font-size: 14px;
+                }
+
+                @include tablet {
+                    font-size: 1rem;
+                }
+            }
+
+            .class-input-modificar-prod {
+                text-align: center;
+                width: 300px;
+                height: 35px;
+
+                @include mobile {
+                    width: 260px;
+                    height: 40px;
+                    font-size: 12px;
+                }
+
+                @include tablet {
+                    width: 300px;
+                    height: 40px;
+                    font-size: 1rem;
+                }
+            }
+
+            .class-btn-form-modificar-prod {
+                text-align: center;
+                box-shadow: 1px 1px 1px;
                 border-radius: 7px;
-                border: 1px solid black;
-                box-shadow: 2px 2px 2px;
-                width: 16rem;
-                height: 2rem;
+                width: 300px;
+                height: 40px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #c2c8b4;
+                }
+
+                @include mobile {
+                    width: 260px;
+                    height: 40px;
+                    font-size: 12px;
+                }
+
+                @include tablet {
+                    width: 300px;
+                    height: 40px;
+                    font-size: 1rem;
+                }
             }
         }
     }
-    .class-prod-encontrado{
-        margin: 50px 0;
-        .div-card-prod-encontrado {
-            width: 300px;
-            border: 1px solid black;
+
+    .class-container-card-prod {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        @include mobile {
+            gap: 0.1rem;
+        }
+
+        @include tablet {
+            gap: 0.3rem;
+        }
+
+        .card-producto {
+            background-color: #8a9f95;
+            border-radius: 10px;
+            width: 280px;
+            height: 350px;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
+
+            @include mobile {
+                width: 200px;
+                height: 360px;
+            }
+
+            @include tablet {
+                width: 200px;
+                height: 360px;
+            }
+
+            .class-items-card-prod {
+                text-align: center;
+
+                @include mobile {
+                    font-size: 10px;
+                }
+
+                @include tablet {
+                    font-size: 12px;
+                }
+            }
+
+            .class-container-btn-modificar-prod {
+                .class-btn-modificar {
+                    border: 1px solid black;
+                    box-shadow: 1px 1px 1px;
+                    border-radius: 7px;
+                    width: 200px;
+                    height: 40px;
+                    cursor: pointer;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background-color: #c2c8b4;
+                    }
+
+                    @include mobile {
+                        width: 140px;
+                        height: 35px;
+                        font-size: 12px;
+                    }
+
+                    @include tablet {
+                        width: 160px;
+                        height: 35px;
+                        font-size: 12px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .class-prod-encontrado {
+        background-color: #8a9f95;
+        border-radius: 10px;
+        width: 280px;
+        height: 300px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile {
+            width: 200px;
+            height: 360px;
+        }
+
+        @include tablet {
+            width: 200px;
+            height: 360px;
         }
     }
 }

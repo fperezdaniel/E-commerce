@@ -5,8 +5,10 @@ import { formAbonarConCredito } from "./formAbonarConCredito.js";
 export const metodosDePago = () => {
     console.log("finalizarCompra");
     if (miCarrito.length >= 1) {
-        const seccionCentralMain = document.getElementById("seccion-central-main");
-        seccionCentralMain.innerHTML = ``;
+        /* const seccionCentralMain = document.getElementById("seccion-central-main");
+        seccionCentralMain.innerHTML = ``; */
+        const containerSectionProd = document.getElementById("container-seccion-prod");
+        containerSectionProd.innerHTML = ``;
         const formFinalizarCompra = document.createElement("form");
         formFinalizarCompra.setAttribute("class", "class-form-finalizar-compra");
         formFinalizarCompra.innerHTML = `
@@ -17,7 +19,7 @@ export const metodosDePago = () => {
                                             <p class="class-option-pago">Credito</p>
                                             <input type="checkbox" id="input-credito" placeholder="Credito">
                                         </div>`;
-        seccionCentralMain.appendChild(formFinalizarCompra);
+        containerSectionProd.appendChild(formFinalizarCompra);
         const inputDebito = document.getElementById("input-debito");
         inputDebito.addEventListener("click", formAbonarConDebito);
         const inputCredito = document.getElementById("input-credito");

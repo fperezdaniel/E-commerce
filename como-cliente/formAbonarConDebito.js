@@ -3,8 +3,10 @@ import { finalizarCompraConDebito } from "./finalizarCompraConDebito.js";
 
 export const formAbonarConDebito = () => {
     console.log("abonarConDebito");
-    const seccionCentralMain = document.getElementById("seccion-central-main");
-    seccionCentralMain.innerHTML = ``;
+    /* const seccionCentralMain = document.getElementById("seccion-central-main");
+    seccionCentralMain.innerHTML = ``; */
+    const containerSectionProd = document.getElementById("container-seccion-prod");
+    containerSectionProd.innerHTML = ``;
     const formAbonarConDebito = document.createElement("form");
     formAbonarConDebito.setAttribute("class", "class-form-abonar-con-debito");
     formAbonarConDebito.innerHTML = `
@@ -31,6 +33,6 @@ export const formAbonarConDebito = () => {
                                         <input class="class-inputs-debito" type="text" id="codigo" name ="input-codigo-de-seguridad">
                                         <button class="class-btn-aceptar-con-debito">Aceptar</button>
                                     </div>`;
-    seccionCentralMain.appendChild(formAbonarConDebito);
+    containerSectionProd.appendChild(formAbonarConDebito);
     formAbonarConDebito.addEventListener("submit", finalizarCompraConDebito);
 }

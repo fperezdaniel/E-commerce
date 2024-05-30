@@ -16,9 +16,9 @@ export const footer = () => {
                             </div>
                             <div class = "class-container-redes">
                                 <p class = "class-p-footer nuestras">Nuestras redes</p>
-                                <p class = "class-p-footer">logo facebook</p>
-                                <p class = "class-p-footer">logo instagram</p>
-                                <p class = "class-p-footer">logo twiter</p>
+                                <p class="class-p-footer"><img class="class-logo-facebook" src="./img/logo facebook.png" alt="Logo-face"> Facebook</p>
+                                <p class = "class-p-footer"> <img class="class-logo-instagram" src="./img/logo-minimalist-instagram.png" alt="Logo-intagram">
+                                Instagram</p>
                             </div>
                             <div class = "class-container-logo-wasap">
                             <img src="./img/logo-wasap.png" class="class-logo-wasap" alt="logo-wasap">

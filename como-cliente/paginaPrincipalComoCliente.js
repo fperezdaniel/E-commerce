@@ -6,16 +6,9 @@ export const capturarHeader = (datosEnLocalStorage) => {
     const headerContainer = document.getElementById("header-container");
     console.log(datosEnLocalStorage, "LINEA 6");
 
-    /* const p = document.createElement("p");
-    p.setAttribute("class", "class-usuario-en-linea");
-    p.innerText = `Hola ${datosEnLocalStorage.nombre}`;
-    headerContainer.appendChild(p); */
+    
     const navContainer = document.createElement("nav");
-    /* const tituloPaginaPrincipal = document.createElement("h1");
-    tituloPaginaPrincipal.setAttribute("class", "class-titulo-pagina-principal");
-    tituloPaginaPrincipal.innerText = "Bienvenido a supermercado cado";
-    tituloPaginaPrincipal.setAttribute("class", "class-titulo-pagina-principal");
-    headerContainer.appendChild(tituloPaginaPrincipal); */
+    
     navContainer.setAttribute("class", "navbar navbar-expand-xl navbar-light py-3");
     navContainer.innerHTML = `
                             <div class="container-fluid">
@@ -63,7 +56,7 @@ export const capturarHeader = (datosEnLocalStorage) => {
 
 
 
-
+/*  */
 
 
 

@@ -17,7 +17,7 @@ export const crearMenuprincipal = () => {
     sectionMenuPrincipalAdmin.innerHTML = `
                                             <h5 class= "titulo-menu-admin">Bienvenido al menu administrador</h5>
                                             <div class= "div-btn-containers">
-                                            <button class ="botones-menu-admin" id="btn-carga-prod">Carga producto</button>
+                                            <button href="#id-carga-prod" class ="botones-menu-admin" id="btn-carga-prod">Carga producto</button>
                                             <button class ="botones-menu-admin" id="btn-filtrar-prod">Filtrar por categoria</button>
                                             <button class ="botones-menu-admin" id="btn-buscar-prod">Buscar producto</button>
                                             <button class ="botones-menu-admin" id="btn-ver-listado-prod">Ver listado producto</button>
