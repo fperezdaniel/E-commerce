@@ -1,11 +1,10 @@
 
 import { mostrarProductosSegunCategoria } from "./mostrarProdSeguncategoria.js";
-
+import { cerrarSesion } from "./cerrarSession.js";
 /** Capturar header pagina principal cliente */
 export const capturarHeader = (datosEnLocalStorage) => {
     const headerContainer = document.getElementById("header-container");
     console.log(datosEnLocalStorage, "LINEA 6");
-
     
     const navContainer = document.createElement("nav");
     
@@ -13,6 +12,7 @@ export const capturarHeader = (datosEnLocalStorage) => {
     navContainer.innerHTML = `
                             <div class="container-fluid">
                                 <a class="class-titulo-pagina-principal navbar-brand" href="">Bienvenidos a super mercado cado</a>
+                                <button id= "btnCerrarSesion" class="nav-link class-btn-cerrar-sesion" >Cerrar sesion</button>
                                 <a class="class-usuario-en-linea nav-link" href="">Hola ${datosEnLocalStorage.nombre} <img id="usuario-login" src="./img/user-img.png" class="oculto" alt="usuario"></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
                                     aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,49 +50,7 @@ export const capturarHeader = (datosEnLocalStorage) => {
     for (const link of linksPorClass) {
         link.addEventListener("click", mostrarProductosSegunCategoria);
     }
+    const btnCerraSesion = document.getElementById("btnCerrarSesion");
+    btnCerraSesion.addEventListener("click", cerrarSesion);
+
 }
-
-/** TENES QUE AGREGARLE EL EVENTO AL BTN CERRAR SESSION */
-
-
-
-/*  */
-
-
-
-/* <h1 class="class-titulo-pagina-principal">Super mercado cado</h1>
-                            <div class="container-fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLight"
-                                aria-controls="navbarLight" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse show class-div-container-ul" id="navbarLight">
-                                
-                                <ul id="ul-container" class="navbar-nav me-auto mb-2 mb-xl-0 ul-container class-ul-container">
-                                    <li class="nav-item class-li">
-                                        <a class=" links-pagina-principal  active" href=""><span class="class-usuario-en-linea">bienvenido ${datosEnLocalStorage.nombre}</span>  <img id="usuario-login" src="./img/user-img.png" class="oculto" alt="usuario"></a>
-                                    </li>
-                                    <li class="nav-item class-li">
-                                        <a  class=" links-pagina-principal  " href=""></a>
-                                    </li>
-                                    <li class="nav-item class-li">
-                                        <a id="panificado" class=" links-pagina-principal  active " href="">Panificado</a>
-                                    </li>
-                                    <li class="nav-item class-li">
-                                        <a id="carne" class=" links-pagina-principal  "  href="">Carnes</a>
-                                    </li>
-                                    <li class="nav-item class-li">
-                                        <a id="aderezos" class=" links-pagina-principal  " href="">Aderezos y salsas</a>
-                                    </li>
-                                    <li class="nav-item class-li">
-                                        <a id="limpieza" class=" links-pagina-principal  " href="">Limpieza</a>
-                                    </li>
-                                    <li class="nav-item class-li">
-                                        <a id="bebidas" class=" links-pagina-principal  " href="">Bebidas</a>
-                                    </li>
-                                    <li class="nav-item class-li">
-                                        <a id="fiambres" class="links-pagina-principal " href="">Fiambres</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> */

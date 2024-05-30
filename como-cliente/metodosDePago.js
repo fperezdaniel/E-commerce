@@ -5,8 +5,6 @@ import { formAbonarConCredito } from "./formAbonarConCredito.js";
 export const metodosDePago = () => {
     console.log("finalizarCompra");
     if (miCarrito.length >= 1) {
-        /* const seccionCentralMain = document.getElementById("seccion-central-main");
-        seccionCentralMain.innerHTML = ``; */
         const containerSectionProd = document.getElementById("container-seccion-prod");
         containerSectionProd.innerHTML = ``;
         const formFinalizarCompra = document.createElement("form");

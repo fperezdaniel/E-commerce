@@ -1,8 +1,7 @@
 import DatosCliente from "./classDatosCliente.js";
 import BaseDeDatos from "./classBaseDeDatos.js";
 import { validarInputsRegistro } from "./validandoInputsRegistro.js";
-/* import { mostrarLoginCliente } from "../como-cliente/loginComoCliente.js";
- */
+
 export const objetoBaseDeDatos = new BaseDeDatos();
 
 const cargaDeDatosUsuarioNuevo = (e) => {
@@ -13,7 +12,7 @@ const cargaDeDatosUsuarioNuevo = (e) => {
     console.log(inputUsuarioRegistro);
     const inputContrasenaRegistro = eventoFormNuevoCliente["input-contrasena-registro"].value;
     console.log(inputContrasenaRegistro);
-    const inputsRegistroValidados = validarInputsRegistro(inputNombreRegistro, inputApellidoRegistro, inputFechaNacimiento, inputSexoRegistro, inputDniRegistro, inputEstadoCivil, inputEmail, inputUsuarioRegistro, inputContrasenaRegistro);
+    const inputsRegistroValidados = validarInputsRegistro(inputUsuarioRegistro, inputContrasenaRegistro);
     console.log(inputsRegistroValidados);
     if (inputsRegistroValidados) {
         const nuevoClienteRegistrado = new DatosCliente({

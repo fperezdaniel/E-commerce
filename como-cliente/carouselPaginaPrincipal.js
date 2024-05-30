@@ -1,5 +1,4 @@
-/* Body.appendchild(carousel) */
-/*  py-2 d-block */
+
 export const carousel = () => {
     const sectionContainerCarousel = document.getElementById("section-container-carousel");
     sectionContainerCarousel.innerHTML = ``;

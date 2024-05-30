@@ -35,7 +35,3 @@ export const formAbonarConCredito = () => {
     formAbonarConCredito.addEventListener("submit", finalizarCompraConCredito);
 
 }
-
-
-/* Tenes que revisar por la parte de abonar 
-con credito no se elimina el carrito  JAVASCRIPT*/

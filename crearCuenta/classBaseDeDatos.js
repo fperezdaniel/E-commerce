@@ -26,4 +26,3 @@ class BaseDeDatos {
 }
 export default BaseDeDatos;
 
-/** TEMINASTE LA LOGICA, CREAR CUENTA NUEVO CLIENTE */

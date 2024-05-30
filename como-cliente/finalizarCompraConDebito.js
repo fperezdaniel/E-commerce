@@ -33,6 +33,4 @@ export const finalizarCompraConDebito = (e) => {
         alert("Complete todos los campos por favor");
     }
 }
-/* Te queda acomodar la parte con credito y ver por q se sigue viendo
-el carrito en el inicio principal
- */
+

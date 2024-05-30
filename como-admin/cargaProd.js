@@ -1,7 +1,6 @@
 import { validarInputCargaProd } from "./validarInputCargaProd.js";
 import Producto from "./classProducto.js";
 import Deposito from "./classDeposito.js";
-/* import productos from "./arrayProductos.json"; */
 export const objetoDeposito = new Deposito();
 export const obtenerProd = async ()=>{
     const res = await fetch("./como-admin/arrayProductos.json")

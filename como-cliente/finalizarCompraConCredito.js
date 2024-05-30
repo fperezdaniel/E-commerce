@@ -30,5 +30,3 @@ export const finalizarCompraConCredito = (e) => {
         alert("Complete todos los campos por favor");
     }
 }
-
-/** Tenes que aplicar SASS y corrregir la ortografia */

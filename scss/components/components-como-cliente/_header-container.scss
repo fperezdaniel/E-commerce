@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     z-index: 100;
-    
+
     .navbar {
         .container-fluid {
             .class-titulo-pagina-principal {
@@ -12,45 +12,67 @@
                 font-size: 1rem;
                 font-family: 'Antic Didone', serif;
                 font-weight: bold;
-                
-                @include mobile{
+
+                @include mobile {
                     font-size: 1rem;
                 }
-                @include tablet{
+
+                @include tablet {
                     font-size: 1rem;
                 }
-                
+
             }
-            .class-usuario-en-linea{
+            .class-btn-cerrar-sesion {
+                background-color: #cd040b;
+                color: white;
+                text-align: center;
+                font-weight: bold;
+                font-size: 10px;
+                box-shadow: 3px 3px 3px;
+                border-radius: 10px;
+                width: 100px;
+                /* @include mobile{
+                    font-size: 10px;
+                } */
+            }
+            .class-usuario-en-linea {
                 color: white;
                 font-size: 0.69rem;
                 text-transform: capitalize;
                 padding-top: 0.7rem;
-                @include mobile{
+
+                @include mobile {
                     display: none;
                 }
-                @include tablet{
+
+                @include tablet {
                     display: none;
                 }
             }
-            .class-img-usuario{
+
+            .class-img-usuario {
                 width: 20px;
             }
+
             .collapse {
                 .class-ul-container {
                     font-size: 0.69rem;
                     font-weight: bold;
-                    @include mobile{
+
+                    @include mobile {
                         font-size: 0.62rem;
                     }
-                    @include tablet{
+
+                    @include tablet {
                         font-size: 0.62rem;
                     }
-                    .class-li{
-                        .nav-link{
+
+                    .class-li {
+                        .nav-link {
                             color: white;
                             font-weight: bold;
                         }
+
                         
                     }
                 }

@@ -3,8 +3,6 @@ import { finalizarCompraConDebito } from "./finalizarCompraConDebito.js";
 
 export const formAbonarConDebito = () => {
     console.log("abonarConDebito");
-    /* const seccionCentralMain = document.getElementById("seccion-central-main");
-    seccionCentralMain.innerHTML = ``; */
     const containerSectionProd = document.getElementById("container-seccion-prod");
     containerSectionProd.innerHTML = ``;
     const formAbonarConDebito = document.createElement("form");
