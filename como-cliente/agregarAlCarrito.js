@@ -47,7 +47,7 @@ export const mostrarCarrito = () => {
                                                 <p class="class-item-prod-en-carrito">Precio x unidad: $ ${el.precio}</p>
                                                 <p class="class-item-prod-en-carrito">${el.cantidad}</p>
                                                 <p class="class-item-prod-en-carrito">$ ${el.precio * el.cantidad}</p>
-                                                <button  id="${el.id}" class= "class-btn-eliminar-prod">Eliminar producto</button>
+                                                <button  id="${el.id}" class= "class-btn-eliminar-prod">Eliminar</button>
                                             </div>`;
             containerProdEnCarrito.appendChild(cardProdEnCarrito);
         });

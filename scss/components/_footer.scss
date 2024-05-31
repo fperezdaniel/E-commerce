@@ -1,10 +1,9 @@
 .class-footer {
     width: 100%;
-    margin-top: 10rem;
     display: flex;
     justify-content: center;
     align-content: center;
-    
+    margin-top: 12rem;
     @include mobile {
         margin-top: 14.8rem;
         align-items: center;
@@ -166,8 +165,7 @@
                 display: none;
             }
             @include tablet {
-                width: 100%;
-                align-items: start;
+                display: none;
             }
             .class-logo-facebook {
                 width: 29px;

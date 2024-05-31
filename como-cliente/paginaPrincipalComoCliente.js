@@ -13,7 +13,7 @@ export const capturarHeader = (datosEnLocalStorage) => {
                             <div class="container-fluid">
                                 <a class="class-titulo-pagina-principal navbar-brand" href="">Bienvenidos a super mercado cado</a>
                                 <button id= "btnCerrarSesion" class="nav-link class-btn-cerrar-sesion" >Cerrar sesion</button>
-                                <a class="class-usuario-en-linea nav-link" href="">Hola ${datosEnLocalStorage.nombre} <img id="usuario-login" src="./img/user-img.png" class="oculto" alt="usuario"></a>
+                                <a class="class-usuario-en-linea nav-link" href="">Hola ${datosEnLocalStorage.user} <img id="usuario-login" src="./img/user-img.png" class="oculto" alt="usuario"></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark"
                                     aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>

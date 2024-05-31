@@ -287,8 +287,8 @@
 
             .class-card-links-categoria {
                 border: 1px solid #bdbdbd;
-                width: 210px;
-                height: 350px;
+                width: 180px;
+                height: 300px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -343,8 +343,8 @@
                     font-size: 0.8rem;
                     box-shadow: 2px 2px 2px;
                     border-radius: 7px;
-                    width: 100px;
-                    height: 40px;
+                    width: 80px;
+                    height: 30px;
 
                     @include mobile {
                         font-size: 0.6rem;
