@@ -1,4 +1,4 @@
 export const cerrarSesion = () => {
-    localStorage.removeItem("clienteValido");
+    localStorage.clear();
     window.location.href = './index.html';
 }
